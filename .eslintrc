@@ -1,0 +1,20 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/standard"
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "@typescript-eslint/camelcase": "off",
+    "simple-import-sort/sort": "error"
+  }
+}
